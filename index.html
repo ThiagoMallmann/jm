@@ -4,27 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Júlia Maria | Biomédica Estética - Ciência e Beleza em Equilíbrio</title>
-    <!-- Carregamento do Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- O CDN do Lucide Icons é mantido caso você precise dos ícones em outras seções, mas o script de inicialização será removido para simplificar. -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- Configuração personalizada do Tailwind CSS -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        // Azul Acinzentado Suave (Cor Primária da Marca)
                         'jm-blue': '#446888',
-                        // Fundo muito claro, quase branco
                         'jm-light-bg': '#F8F9FA',
-                        // Texto e elementos escuros para contraste
                         'jm-text': '#1E293B',
-                        // Cinza Leve para detalhes
                         'jm-gray': '#919293',
                     },
                     fontFamily: {
-                        // Inter para tipografia moderna e elegante
                         sans: ['Inter', 'sans-serif'],
                     },
                 }
@@ -32,12 +24,11 @@
         }
     </script>
     <style>
-        /* Scroll suave para links de navegação */
         html {
             scroll-behavior: smooth;
         }
 
-        /* Cor de fundo primária para seções */
+        /* Cor de fundo main */
         .section-bg {
             background-color: #F8F9FA;
         }
@@ -45,13 +36,9 @@
 </head>
 <body class="bg-white text-jm-text antialiased">
 
-<!-- Navbar Minimalista -->
 <header class="fixed top-0 left-0 w-full z-40 bg-white/95 backdrop-blur-sm shadow-sm">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
-        <!-- Logo Minimalista - AGORA COM IMAGEM -->
         <div class="flex items-center space-x-2">
-
-            <!-- Coloque o caminho da sua logo aqui (Ex: "assets/logo.png") -->
             <img
                     src="assets/logo.png"
                     alt="Logo Júlia Maria Biomédica Estética"
@@ -59,7 +46,6 @@
             <span class="text-jm-text font-medium text-lg">Júlia Maria</span>
         </div>
 
-        <!-- Menu de Navegação (Escondido em Mobile) -->
         <div class="hidden md:flex space-x-8 text-sm font-medium">
             <a href="#hero" class="hover:text-jm-blue transition duration-300">Início</a>
             <a href="#sobre" class="hover:text-jm-blue transition duration-300">Sobre</a>
@@ -68,16 +54,13 @@
             <a href="#contato" class="text-white bg-jm-blue hover:bg-jm-blue/90 px-4 py-2 rounded-lg transition duration-300 shadow-lg">Agendar Avaliação</a>
         </div>
 
-        <!-- CTA em Mobile -->
         <a href="#contato" class="md:hidden text-white bg-jm-blue hover:bg-jm-blue/90 px-3 py-1.5 text-sm rounded-lg transition duration-300 shadow-md">Agendar</a>
     </nav>
 </header>
 
 <main>
-    <!-- 1. Hero Section (Início) -->
     <section id="hero" class="min-h-screen pt-24 flex items-center bg-jm-light-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
-            <!-- Texto Principal -->
             <div>
                 <h1 class="text-5xl md:text-6xl font-extralight text-jm-text leading-tight mb-6">
                     Excelência em<br>
@@ -91,56 +74,49 @@
                 </a>
             </div>
 
-            <!-- Imagem/Render -->
             <div class="flex justify-center md:justify-end">
                 <img
-                        src="assets/icon.jpg"
+                        src="assets/main2.jpg"
                         alt="Imagem que representa o equilíbrio entre ciência e beleza."
-                        class="w-full max-w-md h-96 object-cover rounded-3xl shadow-2xl transition duration-500 hover:shadow-3xl">
+                        class="w-full max-w-md h-960 object-cover rounded-3xl shadow-2xl transition duration-500 hover:shadow-3xl">
             </div>
         </div>
     </section>
 
-    <!-- 2. Sobre a Profissional -->
     <section id="sobre" class="py-24 md:py-32 section-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-12 items-center">
-            <!-- Foto Elegante -->
             <div class="md:col-span-1 flex justify-center">
                 <img
-                        src="assets/icon.jpg"
+                        src="assets/main.png"
                         alt="Foto profissional de Júlia Maria, Biomédica Estética."
                         class="w-64 h-64 object-cover rounded-full shadow-2xl border-4 border-white ring-4 ring-jm-blue/30 transition duration-500 hover:ring-8">
             </div>
 
-            <!-- Texto -->
             <div class="md:col-span-2">
-                <h2 class="text-3xl font-light text-jm-blue mb-4 uppercase tracking-wider">Júlia Maria</h2>
+                <h2 class="text-3xl font-light text-jm-blue mb-4 uppercase tracking-wider">Master ProFull Brasil</h2>
                 <h3 class="text-4xl font-extralight text-jm-text mb-8">
-                    Técnica, Precisão e Cuidado Humanizado.
+                    Alinhamento de Imagem, Elegância e Expertise Científica.
                 </h3>
                 <p class="text-lg font-light leading-relaxed mb-4">
-                    Biomédica Estética especializada em harmonização facial e corporal com foco em resultados que respeitam a individualidade e realçam a beleza natural.
+                    Com <strong class="font-medium text-jm-blue">mais de uma década de atuação</strong> na estética facial e corporal, Dra. Júlia Maria é <strong class="font-medium text-jm-blue">Master ProFull</strong> e especialista em <strong class="font-medium text-jm-blue">Micropigmentação Labial</strong>. Nossa missão é transformar aparências de forma elegante, feminina e sofisticada, ajudando você a expressar sua melhor versão com autenticidade e confiança.
                 </p>
                 <p class="text-lg font-light leading-relaxed text-jm-text/80">
-                    O trabalho de Júlia Maria é guiado pela precisão científica, utilizando as técnicas mais seguras e modernas do mercado. Seu compromisso é com o bem-estar e a confiança, garantindo que cada procedimento seja executado com a máxima sofisticação e delicadeza.
+                    Sua beleza será alinhada com harmonia e elegância. O trabalho é guiado pela precisão biomédica e técnica avançada, garantindo que cada pequeno ajuste resulte em uma grande transformação, sempre respeitando a naturalidade e a individualidade do seu rosto.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- 3. Procedimentos -->
     <section id="procedimentos" class="py-24 md:py-32">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-light text-jm-blue mb-2 uppercase tracking-wider">Nossos Serviços</h2>
                 <h3 class="text-4xl font-extralight text-jm-text">
-                    Resultados Personalizados e Atemporais.
+                    Técnicas Master e Resultados Sofisticados.
                 </h3>
             </div>
 
-            <!-- Grid de Cards -->
             <div class="grid md:grid-cols-4 gap-8">
-                <!-- Card 1: Botox -->
                 <div class="bg-white p-8 rounded-2xl shadow-lg border border-jm-gray/30 transition duration-300 hover:shadow-xl hover:scale-[1.02]">
                     <i data-lucide="syringe" class="text-jm-blue w-8 h-8 mb-4"></i>
                     <h4 class="text-xl font-medium mb-3 text-jm-text">Toxina Botulínica (Botox)</h4>
@@ -149,7 +125,6 @@
                     </p>
                 </div>
 
-                <!-- Card 2: Harmonização Facial -->
                 <div class="bg-white p-8 rounded-2xl shadow-lg border border-jm-gray/30 transition duration-300 hover:shadow-xl hover:scale-[1.02]">
                     <i data-lucide="heart-pulse" class="text-jm-blue w-8 h-8 mb-4"></i>
                     <h4 class="text-xl font-medium mb-3 text-jm-text">Harmonização Facial</h4>
@@ -158,7 +133,6 @@
                     </p>
                 </div>
 
-                <!-- Card 3: Bioestimuladores -->
                 <div class="bg-white p-8 rounded-2xl shadow-lg border border-jm-gray/30 transition duration-300 hover:shadow-xl hover:scale-[1.02]">
                     <i data-lucide="shield-check" class="text-jm-blue w-8 h-8 mb-4"></i>
                     <h4 class="text-xl font-medium mb-3 text-jm-text">Bioestimuladores de Colágeno</h4>
@@ -167,22 +141,19 @@
                     </p>
                 </div>
 
-                    <!-- Card 4: Micropigmentação -->
-                    <div class="bg-white p-8 rounded-2xl shadow-lg border border-jm-gray/30 transition duration-300 hover:shadow-xl hover:scale-[1.02]">
-                        <i data-lucide="syringe" class="text-jm-blue w-8 h-8 mb-4"></i>
-                        <h4 class="text-xl font-medium mb-3 text-jm-text">Micropigmentação</h4>
-                        <p class="text-jm-text/70 font-light">
-                            Aplicação precisa para suavizar linhas de expressão e prevenir o envelhecimento, mantendo a naturalidade e a expressividade.
-                        </p>
-                    </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-jm-gray/30 transition duration-300 hover:shadow-xl hover:scale-[1.02]">
+                    <i data-lucide="smile" class="text-jm-blue w-8 h-8 mb-4"></i>
+                    <h4 class="text-xl font-medium mb-3 text-jm-text">Micropigmentação Labial (GoldenLips)</h4>
+                    <p class="text-jm-text/70 font-light">
+                        Técnicas Master para lábios perfeitamente revitalizados. Inclui <strong class="text-jm-blue font-medium">neutralização e implantação de cor</strong> para um visual sempre elegante e sofisticado.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. Benefícios e Diferenciais -->
     <section id="diferenciais" class="py-24 md:py-32 section-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
-            <!-- Título e Introdução -->
             <div>
                 <h2 class="text-3xl font-light text-jm-blue mb-4 uppercase tracking-wider">Por Que Escolher JM?</h2>
                 <h3 class="text-4xl font-extralight text-jm-text mb-8">
@@ -190,9 +161,7 @@
                 </h3>
             </div>
 
-            <!-- Lista de Diferenciais -->
             <div class="space-y-8">
-                <!-- Diferencial 1 -->
                 <div class="flex items-start space-x-4">
                     <i data-lucide="aperture" class="text-jm-blue w-7 h-7 flex-shrink-0 mt-1"></i>
                     <div>
@@ -200,7 +169,6 @@
                         <p class="text-jm-text/70 font-light">Foco na precisão milimétrica, garantindo a segurança e o conforto durante todos os procedimentos.</p>
                     </div>
                 </div>
-                <!-- Diferencial 2 -->
                 <div class="flex items-start space-x-4">
                     <i data-lucide="shield-half" class="text-jm-blue w-7 h-7 flex-shrink-0 mt-1"></i>
                     <div>
@@ -208,7 +176,6 @@
                         <p class="text-jm-text/70 font-light">Uso exclusivo de produtos de alta qualidade, aprovados e com procedência certificada.</p>
                     </div>
                 </div>
-                <!-- Diferencial 3 -->
                 <div class="flex items-start space-x-4">
                     <i data-lucide="leaf" class="text-jm-blue w-7 h-7 flex-shrink-0 mt-1"></i>
                     <div>
@@ -220,56 +187,56 @@
         </div>
     </section>
 
-    <!-- 5. Antes e Depois (Simulação de Galeria Minimalista) -->
-    <section id="galeria" class="py-24 md:py-32">
+
+    <section id="galeria" class="py-20 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-light text-jm-blue mb-2 uppercase tracking-wider">Transformações Reais</h2>
-                <h3 class="text-4xl font-extralight text-jm-text">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl font-light text-jm-blue mb-2 uppercase tracking-wider">Transformações Reais</h2>
+                <h3 class="text-3xl font-extralight text-jm-text">
                     A Arte do Equilíbrio e da Delicadeza.
                 </h3>
             </div>
 
-            <!-- Galeria (Grid Minimalista) -->
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Item 1: ANTES -->
-                <div class="relative rounded-xl overflow-hidden shadow-lg aspect-square transition duration-300 hover:opacity-90 group">
-                    <!-- Coloque o caminho da foto ANTES 1 aqui (Ex: "assets/antes-1.jpg") -->
-                    <img
-                            src="https://placehold.co/400x400/D1D5DB/1E293B?text=ANTES+1"
-                            alt="Foto antes do procedimento 1"
-                            class="w-full h-full object-cover"
-                            onerror="this.onerror=null; this.src='https://placehold.co/400x400/D1D5DB/1E293B?text=FOTO+FALHOU';"
-                    >
-                    <span class="absolute bottom-0 left-0 bg-jm-text/70 text-white text-xs font-semibold px-3 py-1 m-2 rounded-lg">ANTES</span>
+            <div class="grid lg:grid-cols-3 gap-6 items-start">
+                <div class="flex flex-col gap-4">
+                    <div class="relative rounded-xl overflow-hidden shadow-xl flex-1 transition duration-300 hover:scale-[1.02] group filter grayscale hover:grayscale-0">
+                        <img src="assets/feed1.jpg" alt="Foto antes do procedimento" class="w-full h-auto object-cover aspect-square">
+                    </div>
+                    <div class="relative rounded-xl overflow-hidden shadow-xl flex-1 transition duration-300 hover:scale-[1.02] group filter grayscale hover:grayscale-0">
+                        <img src="assets/arte1.png" alt="Arte estética em procedimento" class="w-full h-auto object-cover aspect-square">
+                    </div>
                 </div>
-                <!-- Item 2: DEPOIS -->
-                <div class="relative rounded-xl overflow-hidden shadow-lg aspect-square transition duration-300 hover:opacity-90 group">
-                    <!-- Coloque o caminho da foto DEPOIS 1 aqui (Ex: "assets/depois-1.jpg") -->
-                    <img
-                            src="https://placehold.co/400x400/446888/FFFFFF?text=DEPOIS+1"
-                            alt="Foto depois do procedimento 1"
-                            class="w-full h-full object-cover"
-                            onerror="this.onerror=null; this.src='https://placehold.co/400x400/446888/FFFFFF?text=FOTO+FALHOU';"
-                    >
-                    <span class="absolute bottom-0 left-0 bg-jm-blue text-white text-xs font-semibold px-3 py-1 m-2 rounded-lg">DEPOIS</span>
+
+                <div class="flex justify-center items-center lg:col-span-1">
+                    <div class="relative rounded-xl overflow-hidden shadow-2xl h-[60vh] md:h-[50vh] lg:h-[70vh] w-full max-w-lg transition duration-500 hover:shadow-jm-blue/50">
+                        <video
+                                src="assets/antesedepois.mp4"
+                                alt="Vídeo de antes e depois do procedimento"
+                                class="w-full h-full object-cover"
+                                autoplay
+                                loop
+                                muted
+                                playsinline
+                        >
+                        </video>
+                        <span class="absolute top-0 right-0 bg-jm-blue text-white text-md font-bold px-4 py-2 m-3 rounded-xl shadow-lg">ANTES E DEPOIS</span>
+                        <div class="absolute inset-0 bg-black/10 pointer-events-none"></div>
+                    </div>
                 </div>
-                <!-- Item 3: ANTES/DEPOIS (Simples) -->
-                <div class="relative rounded-xl overflow-hidden shadow-lg aspect-square transition duration-300 hover:opacity-90 group">
-                    <!-- Coloque o caminho de outra foto Antes/Depois aqui (Ex: "assets/comparacao-2.jpg") -->
-                    <img
-                            src="https://placehold.co/400x400/F8F9FA/446888?text=COMPARAÇÃO"
-                            alt="Comparativo de Antes e Depois"
-                            class="w-full h-full object-cover"
-                            onerror="this.onerror=null; this.src='https://placehold.co/400x400/F8F9FA/446888?text=FOTO+FALHOU';"
-                    >
-                    <span class="absolute bottom-0 left-0 bg-jm-text/70 text-white text-xs font-semibold px-3 py-1 m-2 rounded-lg">VEJA MAIS</span>
+
+                <div class="flex flex-col gap-4">
+                    <div class="relative rounded-xl overflow-hidden shadow-xl flex-1 transition duration-300 hover:scale-[1.02] group filter grayscale hover:grayscale-0">
+                        <img src="assets/feed2.jpg" alt="Foto de procedimento estético" class="w-full h-auto object-cover aspect-square">
+                    </div>
+                    <div class="relative rounded-xl overflow-hidden shadow-xl flex-1 transition duration-300 hover:scale-[1.02] group filter grayscale hover:grayscale-0">
+                        <img src="assets/antes1.jpg" alt="Detalhe de tratamento estético" class="w-full h-auto object-cover aspect-square">
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 6. Depoimentos (Simulação de Carrossel/Cards) -->
     <section id="depoimentos" class="py-24 md:py-32 section-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -279,29 +246,25 @@
                 </h3>
             </div>
 
-            <!-- Cards de Depoimentos -->
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Depoimento 1 -->
                 <div class="bg-white p-6 rounded-2xl shadow-xl border-t-4 border-jm-blue/50 transition duration-300 hover:translate-y-[-4px]">
                     <i data-lucide="quote" class="text-jm-blue w-6 h-6 mb-3"></i>
                     <p class="italic text-lg text-jm-text/80 mb-4 font-light">
-                        "Júlia Maria transformou minha autoestima. A delicadeza e a precisão em cada detalhe são incomparáveis. O resultado é sutil e natural, exatamente como eu queria."
+                        "Dra Júlia transformou minha autoestima. A delicadeza e a precisão em cada detalhe são incomparáveis. O resultado é sutil e natural, exatamente como eu queria."
                     </p>
                     <p class="font-medium text-sm text-jm-text">- Ana C.</p>
                 </div>
-                <!-- Depoimento 2 -->
                 <div class="bg-white p-6 rounded-2xl shadow-xl border-t-4 border-jm-blue/50 transition duration-300 hover:translate-y-[-4px]">
                     <i data-lucide="quote" class="text-jm-blue w-6 h-6 mb-3"></i>
                     <p class="italic text-lg text-jm-text/80 mb-4 font-light">
                         "O que mais me impressionou foi o cuidado na avaliação. Senti que estava em mãos seguras e técnicas. Profissionalismo puro, recomendo a todos."
                     </p>
-                    <p class="font-medium text-sm text-jm-text">- Pedro L.</p>
+                    <p class="font-medium text-sm text-jm-text">- Larissa.</p>
                 </div>
-                <!-- Depoimento 3 -->
                 <div class="bg-white p-6 rounded-2xl shadow-xl border-t-4 border-jm-blue/50 transition duration-300 hover:translate-y-[-4px]">
                     <i data-lucide="quote" class="text-jm-blue w-6 h-6 mb-3"></i>
                     <p class="italic text-lg text-jm-text/80 mb-4 font-light">
-                        "A elegância do trabalho de Júlia é única. O resultado da harmonização foi incrível, realçou minha beleza sem mudar quem eu sou. Uma verdadeira artista da ciência!"
+                        "A elegância do trabalho da Doutora Júlia é única. O resultado da harmonização foi incrível, realçou minha beleza sem mudar quem eu sou. Uma verdadeira profissional!"
                     </p>
                     <p class="font-medium text-sm text-jm-text">- Beatriz V.</p>
                 </div>
@@ -309,36 +272,30 @@
         </div>
     </section>
 
-    <!-- 7. CTA Final -->
     <section id="contato" class="py-24 md:py-32">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-jm-blue/5 p-12 rounded-3xl shadow-xl border border-jm-blue/10">
             <h2 class="text-4xl font-extralight text-jm-text mb-4">
-                Pronta para Despertar Sua Melhor Versão?
+                Pronta para Transformar Seus Lábios?
             </h2>
             <p class="text-xl text-jm-text/80 mb-10 font-light">
                 Agende sua avaliação e descubra o tratamento ideal, feito com a precisão da ciência e o olhar da arte.
             </p>
-            <a href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20J%C3%BAlia%20Maria." target="_blank" class="inline-block bg-jm-blue text-white text-xl font-medium px-10 py-4 rounded-xl shadow-2xl hover:bg-jm-blue/90 transition duration-300 transform hover:scale-[1.02] ring-4 ring-jm-blue/30">
-                Falar com Especialista
+            <a href="https://www.instagram.com/drajuliamaria_biomedica/" target="_blank" class="inline-block bg-jm-blue text-white text-xl font-medium px-10 py-4 rounded-xl shadow-2xl hover:bg-jm-blue/90 transition duration-300 transform hover:scale-[1.02] ring-4 ring-jm-blue/30">
+                Falar com a Doutora
             </a>
         </div>
     </section>
 </main>
 
-<!-- 8. Rodapé Minimalista -->
 <footer class="bg-jm-text text-jm-light-bg py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
         <div class="grid md:grid-cols-3 gap-8">
-            <!-- Logo e Conceito -->
             <div class="space-y-4">
-                <!-- Imagem no rodapé -->
                 <div class="flex items-center space-x-2 justify-center md:justify-start">
-                    <!-- Coloque o caminho da sua logo aqui (Ex: "assets/logo.png") -->
                     <img
                             src="assets/logo.png"
                             alt="Logo Júlia Maria Biomédica Estética"
                             class="w-8 h-8 object-contain"
-                            onerror="this.onerror=null; this.src='https://placehold.co/32x32/446888/FFFFFF?text=LOGO';"
                     >
                     <span class="text-jm-light-bg font-light tracking-wide text-xl">Júlia Maria</span>
                 </div>
@@ -350,32 +307,24 @@
                 </p>
             </div>
 
-            <!-- Contato -->
             <div class="md:text-center space-y-2">
                 <h5 class="text-base font-medium mb-2 text-jm-blue uppercase tracking-wider">Contato</h5>
-                <p class="text-sm font-light">Rua da Técnica, 1234 - Sala 501</p>
-                <p class="text-sm font-light">(00) 99999-9999</p>
-                <a href="mailto:contato@juliama.com" class="text-sm font-light hover:text-jm-blue transition">contato@juliama.com</a>
+                <p class="text-sm font-light">R. Emília Medeiros, 165 - Laranjeiras (Casa Das Bonecas)</p>
             </div>
 
-            <!-- Redes Sociais -->
             <div class="md:text-right space-y-2">
                 <h5 class="text-base font-medium mb-3 text-jm-blue uppercase tracking-wider">Siga-nos</h5>
                 <div class="flex justify-center md:justify-end space-x-4">
-                    <!-- MANTIDO: Ícones sociais do Lucide, que não precisam de JS para carregar pois são SVG in-line pelo Lucide. -->
-                    <a href="#" class="text-jm-light-bg hover:text-jm-blue transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                    <a href="#" class="text-jm-light-bg hover:text-jm-blue transition"><i data-lucide="facebook" class="w-5 h-5"></i></a>
-                    <a href="#" class="text-jm-light-bg hover:text-jm-blue transition"><i data-lucide="mail" class="w-5 h-5"></i></a>
+                    <a href="https://www.instagram.com/drajuliamaria_biomedica/" class="text-jm-light-bg hover:text-jm-blue transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    <a href="https://www.instagram.com/drajuliamaria_biomedica/" class="text-jm-light-bg hover:text-jm-blue transition"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                    <a href="https://www.instagram.com/drajuliamaria_biomedica/" class="text-jm-light-bg hover:text-jm-blue transition"><i data-lucide="mail" class="w-5 h-5"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
 
-<!-- JavaScript para Inicialização dos Ícones (Recomendado manter para os ícones sociais) -->
 <script>
-    // Função para inicializar o Lucide Icons
-    // Isso transforma <i data-lucide="..."> em SVGs de ícones.
     lucide.createIcons();
 </script>
 
